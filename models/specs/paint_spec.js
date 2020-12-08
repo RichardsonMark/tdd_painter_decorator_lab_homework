@@ -22,6 +22,5 @@ describe("Paint", function() {
     it("should be able to empty itself of paint", function () {
       const actual = paint.emptyItself();
       assert.strictEqual(actual, 25);
-    });
-  
+    });  
   });
