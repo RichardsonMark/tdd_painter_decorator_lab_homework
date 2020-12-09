@@ -24,6 +24,7 @@ describe("Decorator", function() {
     it("should be able to add a can of paint to paint stock", function() {
         decorator.addStock(paintCan);
         const actual = decorator.stock;
+        assert.strictEqual(decorator.stock.length, 1); // add in this 2nd assertion to test whether array contains 1 item
         assert.deepStrictEqual(actual, [paintCan]);
       });
     

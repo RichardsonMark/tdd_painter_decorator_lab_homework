@@ -18,6 +18,13 @@ describe("Paint", function() {
       const actual = paint.checkEmpty();
       assert.strictEqual(actual, false);
     });
+
+// needed to have a test for this - see paint.js
+    it("should be able to check if its not empty", function () {
+        paint = new Paint (0, 0);
+        const actual = paint.checkEmpty();
+        assert.strictEqual(actual, true);
+      });   
   
     it("should be able to empty itself of paint", function () {
       const actual = paint.emptyItself();
